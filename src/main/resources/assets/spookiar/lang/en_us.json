@@ -93,6 +93,9 @@
   "text.autoconfig.spookiar.option.features.featuresConfig.featuresChanges.gravestone_of_stashing_activated": "Gravestone of Stashing Enabled",
   "text.autoconfig.spookiar.option.features.featuresConfig.featuresChanges.gravestone_of_stashing_activated.@Tooltip": "When enabled, Gravestones will spawn holding the deceased player's items if they die with one in their inventory.",
 
+  "advancements.adventure.kill_apollus.title": "Post Mortem Regicide",
+  "advancements.adventure.kill_apollus.description": " Put the undying king to his eternal rest. ",
+
   "enchantment.spookiar.tipping": "Tipping",
   "enchantment.spookiar.tipping.desc": "When attacking, whatever effect you have is dealt to the attacked."
 }

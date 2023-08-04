@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
-  "id": "peculia",
+  "id": "spookiar",
   "version": "${version}",
 
-  "name": "Peculia",
-  "description": "A mod of many feats and many features!",
+  "name": "Spookiar",
+  "description":"A mod that adds a spectacularly spooky experience in Minecraft!",
   "authors": [
     "LunarLuned",
-    "Sydokiddo (Coding & Texture Help)",
-    "AmberSand (Texture & Recipe Help + Music)"
+    "ElBones: Artist, extra texture work",
+    "Ambersand: Artist, Major contributions to audio and textures",
+    "Thaetaa-Terraainn: Music Composer, Creator of 'JUSTICE'"
   ],
   "contact": {
     "homepage": "https://www.twitter.com/CosmaMods",
