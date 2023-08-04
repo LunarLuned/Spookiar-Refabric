@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "spookiar:grimsteel_plating"
+    },
+    "result": "spookiar:grimsteel_plating_wall",
+    "group": "grimsteel_plating_wall",
+    "count": 1
+}

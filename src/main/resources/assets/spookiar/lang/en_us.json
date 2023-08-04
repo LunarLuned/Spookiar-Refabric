@@ -1,0 +1,98 @@
+{
+  "item.spookiar.gravestone_of_stashing": "Gravestone of Stashing",
+
+  "block.spookiar.ectoplasm_block": "Ectoplasm",
+
+  "block.spookiar.gravestone": "Stashing Gravestone",
+  "block.spookiar.spinal_bricks": "Spinal Bricks",
+  "block.spookiar.spinal_brick_slab": "Spinal Brick Slab",
+  "block.spookiar.spinal_brick_stairs": "Spinal Brick Stairs",
+  "block.spookiar.spinal_brick_wall": "Spinal Brick Wall",
+
+  "block.spookiar.spinal_tiles": "Spinal Tiles",
+  "block.spookiar.spinal_tile_slab": "Spinal Tile Slab",
+  "block.spookiar.spinal_tile_stairs": "Spinal Tile Stairs",
+  "block.spookiar.spinal_tile_wall": "Spinal Tile Wall",
+
+  "block.spookiar.chiseled_spinal_bricks": "Chiseled Spinal Bricks",
+  "block.spookiar.sculk_sac_block": "Sculk Sac Block",
+  "block.spookiar.sculk_spine": "Sculk Spine",
+
+  "block.spookiar.spinal_pillar": "Spinal Pillar",
+
+  "item.spookiar.full_sculk_sac": "Full Sculk Sac",
+  "item.spookiar.sculk_sac": "Sculk Sac",
+
+  "item.spookiar.grimsteel_ingot": "Grimsteel Ingot",
+  "item.spookiar.grimsteel_scraps": "Grimsteel Scraps",
+
+
+  "item.spookiar.grimsteel_sickle": "Grimsteel Sickle",
+
+  "block.spookiar.grimsteel_block": "Grimsteel Block",
+  "block.spookiar.grimsteel_plating": "Grimsteel Plating",
+  "block.spookiar.grimsteel_plating_slab": "Grimsteel Plating Slab",
+  "block.spookiar.grimsteel_plating_stairs": "Grimsteel Plating Stairs",
+  "block.spookiar.grimsteel_plating_wall": "Grimsteel Plating Wall",
+
+  "block.spookiar.necrite": "Necrite",
+  "block.spookiar.necrite_slab": "Necrite Slab",
+  "block.spookiar.necrite_stairs": "Necrite Stairs",
+  "block.spookiar.necrite_wall": "Necrite Wall",
+  "block.spookiar.polished_necrite": "Polished Necrite",
+  "block.spookiar.polished_necrite_slab": "Polished Necrite Slab",
+  "block.spookiar.polished_necrite_stairs": "Polished Necrite Stairs",
+  "block.spookiar.polished_necrite_wall": "Polished Necrite Wall",
+  "block.spookiar.necrite_bricks": "Necrite Bricks",
+  "block.spookiar.necrite_brick_slab": "Necrite Brick Slab",
+  "block.spookiar.necrite_brick_stairs": "Necrite Brick Stairs",
+  "block.spookiar.necrite_brick_wall": "Necrite Brick Wall",
+
+  "entity.spookiar.ghost": "Ghost",
+  "item.spookiar.ghost_spawn_egg": "Ghost Spawn Egg",
+
+  "entity.spookiar.wisp": "Wisp",
+  "item.spookiar.wisp_spawn_egg": "Wisp Spawn Egg",
+
+  "entity.spookiar.prime_spirit": "Apollus Prime",
+  "item.spookiar.prime_spirit_spawn_egg": "Apollus Prime Spawn Egg",
+
+  "painting.spookiar.king_apollus.title": "King Apollus",
+  "painting.spookiar.king_apollus.author": "Anne DeWulf",
+
+  "entity.prime_spirit.judgement": "'Judgement!'",
+  "entity.prime_spirit.rise": "'Rise!'",
+  "entity.prime_spirit.weaken": "'Fall!'",
+  "entity.prime_spirit.pathetic": "'Pathetic.'",
+  "entity.prime_spirit.weak": "'Weak!'",
+  "entity.prime_spirit.die": "'Die!'",
+  "entity.prime_spirit.death_speech": "'Prime Spirit monologues'",
+  "entity.prime_spirit.intro": "'Prime Spirit monologues'",
+  "entity.prime_spirit.death": "Prime Spirit implodes",
+
+  "block.gravestone.collect": "Player collects from Gravestone",
+  "block.gravestone.lay": "Gravestone of Stashing stashes",
+
+  "subtitles.entity.ghost.moan": "Ghost moans",
+  "subtitles.entity.ghost.hurt": "Ghost hurts",
+  "subtitles.entity.ghost.jumpscare": "Ghost jumpscares",
+  "subtitles.entity.ghost.death": "Ghost dies",
+  "subtitles.entity.ghost.empowered": "Ghost is empowered",
+
+  "item.sculk_sac.fill": "Sculk Sac fills",
+  "item.sculk_sac.empty": "Sculk Sac empties",
+
+  "text.autoconfig.spookiar.title": "Spookiar Config",
+
+  "text.autoconfig.spookiar.option.features": "Features",
+  "text.autoconfig.spookiar.option.features.@Tooltip": "Features",
+  "text.autoconfig.spookiar.option.features.featuresConfig": "Gameplay Features",
+  "text.autoconfig.spookiar.option.features.featuresConfig.@Tooltip": "Gameplay Features",
+  "text.autoconfig.spookiar.option.features.featuresConfig.featuresChanges": "Gravestone Of Stashing",
+  "text.autoconfig.spookiar.option.features.featuresConfig.featuresChanges.@Tooltip": "Gravestone Of Stashing",
+  "text.autoconfig.spookiar.option.features.featuresConfig.featuresChanges.gravestone_of_stashing_activated": "Gravestone of Stashing Enabled",
+  "text.autoconfig.spookiar.option.features.featuresConfig.featuresChanges.gravestone_of_stashing_activated.@Tooltip": "When enabled, Gravestones will spawn holding the deceased player's items if they die with one in their inventory.",
+
+  "enchantment.spookiar.tipping": "Tipping",
+  "enchantment.spookiar.tipping.desc": "When attacking, whatever effect you have is dealt to the attacked."
+}

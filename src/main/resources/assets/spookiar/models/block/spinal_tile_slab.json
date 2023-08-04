@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "spookiar:block/spinal_tiles",
+    "top": "spookiar:block/spinal_tiles",
+    "side": "spookiar:block/spinal_tiles"
+  }
+}

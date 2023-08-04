@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iDi",
+    "iWi",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "spookiar:grimsteel_ingot"
+    },
+    "D": {
+      "item": "spookiar:gravestone_of_stashing"
+    },
+    "W": {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  },
+  "result": {
+    "item": "spookiar:gravestone_of_stashing",
+    "count": 2
+  }
+}

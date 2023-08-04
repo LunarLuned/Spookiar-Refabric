@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "spookiar:block/necrite_brick_slab"
+    },
+    "type=double": {
+      "model": "spookiar:block/necrite_bricks"
+    },
+    "type=top": {
+      "model": "spookiar:block/necrite_brick_slab_top"
+    }
+  }
+}

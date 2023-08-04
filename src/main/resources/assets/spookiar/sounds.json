@@ -1,0 +1,205 @@
+{
+
+  "entity.prime_spirit.music": {
+    "sounds": [
+      "spookiar:music/prime_spirit/boss_music"
+    ]
+  },
+  "entity.prime_spirit.judgement": {
+    "subtitle": "entity.prime_spirit.judgement",
+    "sounds": [
+      "spookiar:entity/prime_spirit/voice_lines/judgement_1",
+      "spookiar:entity/prime_spirit/voice_lines/judgement_2",
+      "spookiar:entity/prime_spirit/voice_lines/judgement_3"
+    ]
+  },
+  "entity.prime_spirit.rise": {
+    "subtitle": "entity.prime_spirit.rise",
+    "sounds": [
+      "spookiar:entity/prime_spirit/voice_lines/rise_1",
+      "spookiar:entity/prime_spirit/voice_lines/rise_2",
+      "spookiar:entity/prime_spirit/voice_lines/rise_3",
+      "spookiar:entity/prime_spirit/voice_lines/rise_4",
+      "spookiar:entity/prime_spirit/voice_lines/rise_5"
+    ]
+  },
+  "entity.prime_spirit.weaken": {
+    "subtitle": "entity.prime_spirit.weaken",
+    "sounds": [
+      "spookiar:entity/prime_spirit/voice_lines/fall_1",
+      "spookiar:entity/prime_spirit/voice_lines/fall_2",
+      "spookiar:entity/prime_spirit/voice_lines/fall_3",
+      "spookiar:entity/prime_spirit/voice_lines/fall_4"
+    ]
+  },
+  "entity.prime_spirit.weak": {
+    "subtitle": "entity.prime_spirit.weak",
+    "sounds": [
+      "spookiar:entity/prime_spirit/voice_lines/weak/weak1",
+      "spookiar:entity/prime_spirit/voice_lines/weak/weak2",
+      "spookiar:entity/prime_spirit/voice_lines/weak/weak3"
+    ]
+  },
+  "entity.prime_spirit.pathetic": {
+    "subtitle": "entity.prime_spirit.pathetic",
+    "sounds": [
+      "spookiar:entity/prime_spirit/voice_lines/pathetic_1",
+      "spookiar:entity/prime_spirit/voice_lines/pathetic_2",
+      "spookiar:entity/prime_spirit/voice_lines/pathetic_3",
+      "spookiar:entity/prime_spirit/voice_lines/pathetic_4"
+    ]
+  },
+  "entity.prime_spirit.die": {
+    "subtitle": "entity.prime_spirit.die",
+    "sounds": [
+      "spookiar:entity/prime_spirit/voice_lines/die_1",
+      "spookiar:entity/prime_spirit/voice_lines/die_2",
+      "spookiar:entity/prime_spirit/voice_lines/die_3",
+      "spookiar:entity/prime_spirit/voice_lines/die_4"
+    ]
+  },
+  "entity.prime_spirit.death": {
+    "subtitle": "entity.prime_spirit.death",
+    "sounds": [
+      "spookiar:entity/prime_spirit/death"
+    ]
+  },
+  "entity.prime_spirit.intro": {
+    "subtitle": "entity.prime_spirit.intro",
+    "sounds": [
+      "spookiar:entity/prime_spirit/voice_lines/intro/prime_spirit_boss_intro"
+    ]
+  },
+  "entity.prime_spirit.death_speech": {
+    "subtitle": "entity.prime_spirit.death_speech",
+    "sounds": [
+      "spookiar:entity/prime_spirit/death_speech"
+    ]
+  },
+
+  "item.sculk_sac.fill": {
+    "subtitle": "item.sculk_sac.fill",
+    "sounds": [
+      "spookiar:item/sculk_sac/fill"
+    ]
+  },
+  "item.sculk_sac.empty": {
+    "subtitle": "item.sculk_sac.empty",
+    "sounds": [
+      "spookiar:item/sculk_sac/empty"
+    ]
+  },
+
+  "entity.ghost.death": {
+    "sounds": [
+      "spookiar:entity/ghost/death1",
+      "spookiar:entity/ghost/death2"
+    ],
+    "subtitle": "subtitles.entity.ghost.death"
+  },
+  "entity.ghost.hurt": {
+    "sounds": [
+      "spookiar:entity/ghost/hurt/hurt1",
+      "spookiar:entity/ghost/hurt/hurt2"
+    ],
+    "subtitle": "subtitles.entity.ghost.hurt"
+  },
+  "entity.ghost.empowered": {
+    "sounds": [
+      "spookiar:entity/ghost/empowered"
+    ],
+    "subtitle": "subtitles.entity.ghost.empowered"
+  },
+  "entity.ghost.moan": {
+    "sounds": [
+      "spookiar:entity/ghost/moan/moan1",
+      "spookiar:entity/ghost/moan/moan2",
+      "spookiar:entity/ghost/moan/moan3",
+      "spookiar:entity/ghost/moan/moan4",
+      "spookiar:entity/ghost/moan/moan5"
+    ],
+    "subtitle": "subtitles.entity.ghost.moan"
+  },
+  "entity.ghost.jumpscare": {
+    "sounds": [
+      "spookiar:entity/ghost/jumpscare/jumpscare1",
+      "spookiar:entity/ghost/jumpscare/jumpscare2",
+      "spookiar:entity/ghost/jumpscare/jumpscare3",
+      "spookiar:entity/ghost/jumpscare/jumpscare4"
+    ],
+    "subtitle": "subtitles.entity.ghost.jumpscare"
+  },
+  "entity.ghost.rare_secret": {
+    "sounds": [
+      "spookiar:entity/ghost/rare_secret"
+    ],
+    "subtitle": "subtitles.entity.ghost.jumpscare"
+  },
+
+  "block.gravestone.lay": {
+    "subtitle": "block.gravestone.lay",
+    "sounds": [
+      "spookiar:block/gravestone/lay/lay1",
+      "spookiar:block/gravestone/lay/lay2"
+    ]
+  },
+  "block.gravestone.collect": {
+    "subtitle": "block.gravestone.collect",
+    "sounds": [
+      "spookiar:block/gravestone/collect/collect1",
+      "spookiar:block/gravestone/collect/collect2"
+    ]
+  },
+
+
+
+  "block.grimsteel.place": {
+    "sounds": [
+      "spookiar:block/grimsteel/break1",
+      "spookiar:block/grimsteel/break2",
+      "spookiar:block/grimsteel/break3",
+      "spookiar:block/grimsteel/break4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.grimsteel.break": {
+    "sounds": [
+      "spookiar:block/grimsteel/break1",
+      "spookiar:block/grimsteel/break2",
+      "spookiar:block/grimsteel/break3",
+      "spookiar:block/grimsteel/break4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.grimsteel.hit": {
+    "sounds": [
+      "spookiar:block/grimsteel/break1",
+      "spookiar:block/grimsteel/break2",
+      "spookiar:block/grimsteel/break3",
+      "spookiar:block/grimsteel/break4"
+
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.grimsteel.step": {
+    "sounds": [
+      "spookiar:block/grimsteel/step1",
+      "spookiar:block/grimsteel/step2",
+      "spookiar:block/grimsteel/step3",
+      "spookiar:block/grimsteel/step4",
+      "spookiar:block/grimsteel/step5",
+      "spookiar:block/grimsteel/step6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.grimsteel.fall": {
+    "sounds": [
+      "spookiar:block/grimsteel/step1",
+      "spookiar:block/grimsteel/step2",
+      "spookiar:block/grimsteel/step3",
+      "spookiar:block/grimsteel/step4",
+      "spookiar:block/grimsteel/step5",
+      "spookiar:block/grimsteel/step6"
+    ]
+  }
+}

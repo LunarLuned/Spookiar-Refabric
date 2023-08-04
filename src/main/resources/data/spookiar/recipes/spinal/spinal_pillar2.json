@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "spookiar:spinal_bricks"
+    },
+    "result": "spookiar:spinal_pillar",
+    "count": 1
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "spookiar:necrite"
+        }
+    },
+    "result": {
+        "item": "spookiar:necrite_wall",
+        "count": 6
+    },
+    "group": "necrite_wall"
+}

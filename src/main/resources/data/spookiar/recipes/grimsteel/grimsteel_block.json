@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "spookiar:grimsteel_ingot"
+    }
+  },
+  "result": {
+    "item": "spookiar:grimsteel_block",
+    "count": 1
+  }
+}

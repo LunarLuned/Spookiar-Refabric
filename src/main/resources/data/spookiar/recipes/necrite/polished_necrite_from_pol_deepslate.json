@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "D#",
+    "#D"
+  ],
+  "key": {
+    "#": {
+      "item": "spookiar:grimsteel_scraps"
+    },
+    "D": {
+      "item": "minecraft:polished_deepslate"
+    }
+  },
+  "result": {
+    "item": "spookiar:polished_necrite",
+    "count": 4
+  }
+}

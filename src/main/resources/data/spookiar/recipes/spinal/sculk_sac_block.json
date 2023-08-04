@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "spookiar:full_sculk_sac"
+    }
+  },
+  "result": {
+    "item": "spookiar:sculk_sac_block",
+    "count": 1
+  }
+}

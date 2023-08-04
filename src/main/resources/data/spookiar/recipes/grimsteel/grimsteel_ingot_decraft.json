@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spookiar:grimsteel_block"
+    }
+  ],
+  "result": {
+    "item": "spookiar:grimsteel_ingot",
+    "count": 9
+  },
+  "group": "grimsteel_ingot"
+}

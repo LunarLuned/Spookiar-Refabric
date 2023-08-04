@@ -1,0 +1,61 @@
+package net.lunarluned.spookiar.registry.items;
+
+
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.lunarluned.spookiar.Spookiar;
+import net.lunarluned.spookiar.registry.blocks.ModBlocks;
+import net.lunarluned.spookiar.registry.entities.registry.ModEntities;
+import net.lunarluned.spookiar.registry.items.custom.BucketOfEctoplasmItem;
+import net.lunarluned.spookiar.registry.items.custom.GrimSteelSickleItem;
+import net.lunarluned.spookiar.registry.items.custom.SculkSacItem;
+import net.lunarluned.spookiar.registry.items.materials.ModTiers;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.SpawnEggItem;
+
+@SuppressWarnings("ALL")
+public class ModItems {
+
+    // List of items :3
+
+    public static final Item GRAVESTONE_OF_STASHING = registerItem("gravestone_of_stashing",
+    new Item(new FabricItemSettings().stacksTo(8).rarity(Rarity.UNCOMMON)));
+
+    public static final Item GRIMSTEEL_INGOT = registerItem("grimsteel_ingot",
+            new Item(new FabricItemSettings()));
+
+    public static final Item GRIMSTEEL_SCRAPS = registerItem("grimsteel_scraps",
+            new Item(new FabricItemSettings()));
+
+    public static final Item SCULK_SAC = registerItem("sculk_sac",
+            new SculkSacItem(new FabricItemSettings()));
+
+    public static final Item FULL_SCULK_SAC = registerItem("full_sculk_sac",
+            new SculkSacItem(new FabricItemSettings()));
+
+    public static final Item GRIMSTEEL_SICKLE = registerItem("grimsteel_sickle",
+            new GrimSteelSickleItem(ModTiers.GRIMSTEEL,1, -2.2f, new FabricItemSettings()));
+
+    public static final Item GHOST_SPAWN_EGG = registerItem("ghost_spawn_egg",
+            new SpawnEggItem(ModEntities.GHOST, 8122868, 3483938, new FabricItemSettings()));
+
+	public static final Item WISP_SPAWN_EGG = registerItem("wisp_spawn_egg",
+			new SpawnEggItem(ModEntities.WISP, 3483938, 8122868, new FabricItemSettings()));
+
+	public static final Item BUCKET_OF_ECTOPLASM = registerItem("bucket_of_ectoplasm",
+			new BucketOfEctoplasmItem(ModBlocks.ECTOPLASM_BLOCK, new FabricItemSettings().stacksTo(1)));
+
+
+	// Registry for Items:
+
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Spookiar.MOD_ID, name), item);
+    }
+
+    public static void registerModItems() {
+        System.out.println("Registering Items for " + Spookiar.MOD_ID);
+    }
+}

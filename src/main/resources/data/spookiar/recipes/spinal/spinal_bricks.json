@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "spookiar:sculk_spine"
+    }
+  },
+  "result": {
+    "item": "spookiar:spinal_bricks",
+    "count": 4
+  }
+}

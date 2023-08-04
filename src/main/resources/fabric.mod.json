@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "peculia",
+  "version": "${version}",
+
+  "name": "Peculia",
+  "description": "A mod of many feats and many features!",
+  "authors": [
+    "LunarLuned",
+    "Sydokiddo (Coding & Texture Help)",
+    "AmberSand (Texture & Recipe Help + Music)"
+  ],
+  "contact": {
+    "homepage": "https://www.twitter.com/CosmaMods",
+    "sources": "https://github.com/LunarLuned/Peculia"
+  },
+  "license": "MIT",
+  "icon": "assets/spookiar/icon.png",
+  "accessWidener": "spookiar.accesswidener",
+  "environment": "*",
+
+  "entrypoints": {
+    "main": [
+      "net.lunarluned.spookiar.Spookiar"
+    ],
+    "client": [
+      "net.lunarluned.spookiar.client.SpookiarClient"
+    ]
+  },
+  "mixins": [
+    "spookiar.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric-api": "*",
+    "minecraft": "1.20.1",
+    "java": ">=17",
+    "chrysalis": "0.1.6"
+  },
+  "breaks": {
+    "optifine": "*",
+    "optifabric": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

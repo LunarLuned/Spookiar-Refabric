@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "spookiar:necrite"
+    }
+  },
+  "result": {
+    "item": "spookiar:polished_necrite",
+    "count": 4
+  }
+}

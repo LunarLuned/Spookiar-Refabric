@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spookiar:grimsteel_ingot"
+    }
+  ],
+  "result": {
+    "item": "spookiar:grimsteel_scraps",
+    "count": 9
+  },
+  "group": "grimsteel_scraps"
+}

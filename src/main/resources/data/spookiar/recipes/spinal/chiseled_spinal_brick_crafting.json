@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "spookiar:spinal_brick_slab"
+        }
+    },
+    "result": {
+        "item": "spookiar:chiseled_spinal_bricks",
+        "count": 1
+    },
+    "group": "chiseled_spinal_bricks"
+}

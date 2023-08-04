@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "spookiar:grimsteel_plating"
+        }
+    },
+    "result": {
+        "item": "spookiar:grimsteel_plating_stairs",
+        "count": 6
+    },
+    "group": "grimsteel_plating_stairs"
+}

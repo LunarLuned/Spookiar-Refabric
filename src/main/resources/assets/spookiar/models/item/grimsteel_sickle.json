@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "spookiar:item/grimsteel_sickle"
+  }
+}

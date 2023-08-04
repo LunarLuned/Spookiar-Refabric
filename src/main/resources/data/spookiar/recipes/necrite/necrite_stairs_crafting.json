@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "spookiar:necrite"
+        }
+    },
+    "result": {
+        "item": "spookiar:necrite_stairs",
+        "count": 6
+    },
+    "group": "necrite_stairs"
+}

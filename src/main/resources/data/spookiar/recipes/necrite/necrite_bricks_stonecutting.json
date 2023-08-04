@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "spookiar:polished_necrite"
+    },
+    "result": "spookiar:necrite_bricks",
+    "group": "necrite_bricks",
+    "count": 1
+}

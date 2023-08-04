@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "spookiar:block/spinal_brick_slab"
+    },
+    "type=double": {
+      "model": "spookiar:block/spinal_bricks"
+    },
+    "type=top": {
+      "model": "spookiar:block/spinal_brick_slab_top"
+    }
+  }
+}

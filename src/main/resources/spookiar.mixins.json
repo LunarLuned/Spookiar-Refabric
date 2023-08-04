@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.lunarluned.spookiar.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "LivingEntityMixin",
+    "PlayerManagerMixin",
+    "PlayerMixin",
+    "items.sickle.PlayerDualSickleMixin",
+    "items.sickle.ServerPlayerMixin"
+  ],
+  "client": [
+    "items.sickle.ItemInHandRendererMixin",
+    "items.sickle.MinecraftMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "spookiar:spinal_bricks",
+    "spookiar:spinal_tiles",
+    "spookiar:spinal_pillar",
+    "spookiar:chiseled_spinal_bricks",
+    "spookiar:necrite",
+    "spookiar:polished_necrite",
+    "spookiar:necrite_bricks",
+
+    "spookiar:spinal_brick_slab",
+    "spookiar:spinal_tile_slab",
+    "spookiar:grimsteel_plating_slab",
+    "spookiar:necrite_slab",
+    "spookiar:polished_necrite_slab",
+    "spookiar:necrite_brick_slab",
+
+    "spookiar:spinal_brick_stairs",
+    "spookiar:spinal_tile_stairs",
+    "spookiar:grimsteel_plating_stairs",
+    "spookiar:necrite_stairs",
+    "spookiar:polished_necrite_stairs",
+    "spookiar:necrite_brick_stairs",
+
+    "spookiar:spinal_brick_wall",
+    "spookiar:spinal_tile_wall",
+    "spookiar:grimsteel_plating_wall",
+    "spookiar:necrite_wall",
+    "spookiar:polished_necrite_wall",
+    "spookiar:necrite_brick_wall"
+  ]
+}

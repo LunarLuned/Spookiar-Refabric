@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "spookiar:spinal_brick_stairs",
+    "spookiar:spinal_tile_stairs",
+    "spookiar:grimsteel_plating_stairs",
+    "spookiar:necrite_stairs",
+    "spookiar:polished_necrite_stairs",
+    "spookiar:necrite_brick_stairs"
+  ]
+}

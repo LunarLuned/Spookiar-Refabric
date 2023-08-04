@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "spookiar:block/polished_necrite",
+    "top": "spookiar:block/polished_necrite",
+    "side": "spookiar:block/polished_necrite"
+  }
+}
