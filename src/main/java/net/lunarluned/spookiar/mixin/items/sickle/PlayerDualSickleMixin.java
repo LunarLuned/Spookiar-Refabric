@@ -25,7 +25,7 @@ public abstract class PlayerDualSickleMixin extends LivingEntity implements Play
 	public PlayerDualSickleMixin(Level level, BlockPos pos, float yaw, GameProfile profile) {
 		super(EntityType.PLAYER, level);
 	}
-	@Inject(method = "Lnet/minecraft/world/entity/player/Player;tick()V", at = @At(value = "FIELD", target = "Lnet/minecraft/world/entity/player/Player;attackStrengthTicker:I", ordinal = 0))
+	@Inject(method = "tick()V", at = @At(value = "FIELD", target = "Lnet/minecraft/world/entity/player/Player;attackStrengthTicker:I", ordinal = 0))
 	private void spookiar_tick(CallbackInfo info) {
 		lastAttackedOffhandTicks++;
 	}

@@ -38,6 +38,7 @@ public class SpookiarCreativeModeTab {
         // Spawn Eggs Tab
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.SPAWN_EGGS).register(entries -> {
             entries.addAfter(Items.GHAST_SPAWN_EGG, ModItems.GHOST_SPAWN_EGG);
+            entries.addAfter(Items.WITCH_SPAWN_EGG, ModItems.WISP_SPAWN_EGG);
         });
 
     }

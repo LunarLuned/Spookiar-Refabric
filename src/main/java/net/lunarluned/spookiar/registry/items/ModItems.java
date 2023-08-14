@@ -7,6 +7,7 @@ import net.lunarluned.spookiar.registry.blocks.ModBlocks;
 import net.lunarluned.spookiar.registry.entities.registry.ModEntities;
 import net.lunarluned.spookiar.registry.items.custom.BucketOfEctoplasmItem;
 import net.lunarluned.spookiar.registry.items.custom.GrimSteelSickleItem;
+import net.lunarluned.spookiar.registry.items.custom.GrimsteelHeartItem;
 import net.lunarluned.spookiar.registry.items.custom.SculkSacItem;
 import net.lunarluned.spookiar.registry.items.materials.ModTiers;
 import net.minecraft.core.Registry;
@@ -30,6 +31,9 @@ public class ModItems {
     public static final Item GRIMSTEEL_SCRAPS = registerItem("grimsteel_scraps",
             new Item(new FabricItemSettings()));
 
+    public static final Item GRIMSTEEL_HEART = registerItem("grimsteel_heart",
+            new GrimsteelHeartItem(new FabricItemSettings().durability(10)));
+
     public static final Item SCULK_SAC = registerItem("sculk_sac",
             new SculkSacItem(new FabricItemSettings()));
 
@@ -41,6 +45,9 @@ public class ModItems {
 
     public static final Item GHOST_SPAWN_EGG = registerItem("ghost_spawn_egg",
             new SpawnEggItem(ModEntities.GHOST, 8122868, 3483938, new FabricItemSettings()));
+
+    public static final Item PRIME_SPIRIT_SPAWN_EGG = registerItem("prime_spirit_spawn_egg",
+            new SpawnEggItem(ModEntities.PRIME_SPIRIT, 8122868, 8122864, new FabricItemSettings()));
 
 	public static final Item WISP_SPAWN_EGG = registerItem("wisp_spawn_egg",
 			new SpawnEggItem(ModEntities.WISP, 3483938, 8122868, new FabricItemSettings()));

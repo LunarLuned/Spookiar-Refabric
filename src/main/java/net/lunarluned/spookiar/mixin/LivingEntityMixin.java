@@ -26,6 +26,12 @@ public abstract class LivingEntityMixin extends Entity {
 	@Shadow @Nullable
 	public abstract MobEffectInstance getEffect(MobEffect mobEffect);
 
+	@Shadow public abstract float getHealth();
+
+	@Shadow public abstract boolean removeEffect(MobEffect mobEffect);
+
+	@Shadow public abstract void heal(float f);
+
 	public LivingEntityMixin(EntityType<?> type, Level world) {
 		super(type, world);
 	}
@@ -33,7 +39,11 @@ public abstract class LivingEntityMixin extends Entity {
 
 	@ModifyVariable(method = "hurt", at = @At("HEAD"), argsOnly = true)
 	private float spookiar_inverseDamageforPersistence(float amount) {
-		if (this.hasEffect(ModEffects.PERSISTENCE)) {
+		if (this.hasEffect(ModEffects.PERSISTENCE) && amount > 1 && this.getHealth() <= 4) {
+			this.removeEffect(ModEffects.PERSISTENCE);
+			this.heal(4);
+			return 0.0f;
+		} else if (this.hasEffect(ModEffects.PERSISTENCE)) {
 			return amount / (Objects.requireNonNull(this.getEffect(ModEffects.PERSISTENCE)).getAmplifier() + 1);
 		}
 		return amount;
