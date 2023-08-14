@@ -2,7 +2,17 @@
 
   "entity.prime_spirit.music": {
     "sounds": [
-      "spookiar:music/prime_spirit/boss_music"
+      "spookiar:music/prime_spirit/prime_spirit_loop"
+    ]
+  },
+  "entity.prime_spirit.music_start": {
+    "sounds": [
+      "spookiar:music/prime_spirit/prime_spirit_start"
+    ]
+  },
+  "entity.prime_spirit.music_end": {
+    "sounds": [
+      "spookiar:music/prime_spirit/prime_spirit_end"
     ]
   },
   "entity.prime_spirit.judgement": {

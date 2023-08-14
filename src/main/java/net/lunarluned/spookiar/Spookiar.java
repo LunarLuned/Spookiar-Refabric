@@ -4,6 +4,7 @@ package net.lunarluned.spookiar;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.lunarluned.spookiar.config.ModConfig;
 import net.lunarluned.spookiar.registry.ModRegistry;
 import net.lunarluned.spookiar.registry.blocks.ModBlocks;
@@ -13,6 +14,7 @@ import net.lunarluned.spookiar.sounds.ModSoundEvents;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.Vec3i;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
@@ -36,9 +38,14 @@ public class Spookiar implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModRegistry.registerAll();
+		//ServerTickEvents.START_SERVER_TICK.register(this::serverTickEvent);
 		GRAVE_BLOCK_ENTITY = ModBlockEntities.GRAVESTONE;
 		LOGGER.info("Congratulations on being SPOOKED!!! grah ha ha!! >:3");
 	}
+
+	//private void serverTickEvent(MinecraftServer server) {
+
+	//}
 
 	// Mod Config
 

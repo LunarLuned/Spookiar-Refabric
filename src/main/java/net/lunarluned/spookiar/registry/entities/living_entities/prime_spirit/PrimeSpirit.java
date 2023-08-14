@@ -202,16 +202,17 @@ public class PrimeSpirit extends Monster {
 	@Override
 	public void startSeenByPlayer(ServerPlayer player) {
 		super.startSeenByPlayer(player);
-		// reactivate it when the time comes
-		//PrimeSpiritMusicEvent.playBossMusic();
-		this.bossEvent.addPlayer(player);
+		if (this.invulnerableTime < 1) {
+			PrimeSpiritMusicEvent.playBossMusic();
+			this.bossEvent.addPlayer(player);
+		}
 	}
 
 	@Override
 	public void stopSeenByPlayer(ServerPlayer player) {
 		super.stopSeenByPlayer(player);
 		// reactivate it when the time comes
-		//PrimeSpiritMusicEvent.stopBossMusic();
+		PrimeSpiritMusicEvent.stopBossMusic();
 		this.bossEvent.removePlayer(player);
 	}
 
@@ -429,6 +430,8 @@ public class PrimeSpirit extends Monster {
 				livingEntity3.hurt(damageSources().starve(), 1000);
 			}
 			this.deathPoseAnimationState.start(this.tickCount);
+			PrimeSpiritMusicEvent.stopBossMusic();
+			this.level().playSound(null, this.getOnPos(), ModSoundEvents.ENTITY_PRIME_SPIRIT_MUSIC_END, SoundSource.HOSTILE, 5, 1);
 			this.level().playSound(null, this.getOnPos(), ModSoundEvents.ENTITY_PRIME_SPIRIT_DEATH_SPEECH, SoundSource.HOSTILE, 5, 1);
 		}
 		if (this.deathTime == 430) {

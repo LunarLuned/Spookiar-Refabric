@@ -13,6 +13,9 @@ public class ModSoundEvents {
 	// Musics
 
 	public static final SoundEvent ENTITY_PRIME_SPIRIT_MUSIC = registerSoundEvent("entity.prime_spirit.music");
+    public static final SoundEvent ENTITY_PRIME_SPIRIT_MUSIC_END = registerSoundEvent("entity.prime_spirit.music_end");
+    public static final SoundEvent ENTITY_PRIME_SPIRIT_MUSIC_START = registerSoundEvent("entity.prime_spirit.music_start");
+
 
     // Item Sounds
 

@@ -21,7 +21,7 @@
     "description": {
       "translate": "advancements.adventure.kill_apollus.description"
     },
-    "frame": "task",
+    "frame": "challenge",
     "hidden": true,
     "icon": {
       "item": "spookiar:grimsteel_block"
