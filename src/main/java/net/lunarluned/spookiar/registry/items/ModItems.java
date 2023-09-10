@@ -10,12 +10,17 @@ import net.lunarluned.spookiar.registry.items.custom.GrimSteelSickleItem;
 import net.lunarluned.spookiar.registry.items.custom.GrimsteelHeartItem;
 import net.lunarluned.spookiar.registry.items.custom.SculkSacItem;
 import net.lunarluned.spookiar.registry.items.materials.ModTiers;
+import net.lunarluned.spookiar.sounds.ModSoundEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.SpawnEggItem;
+import net.sydokiddo.chrysalis.misc.util.RegistryHelpers;
 
 @SuppressWarnings("ALL")
 public class ModItems {
@@ -30,6 +35,9 @@ public class ModItems {
 
     public static final Item GRIMSTEEL_SCRAPS = registerItem("grimsteel_scraps",
             new Item(new FabricItemSettings()));
+
+    public static final Item BOTTLED_WISP = registerItem("bottled_wisp",
+            RegistryHelpers.registerMobInContainer(ModEntities.WISP, SoundEvents.BOTTLE_EMPTY, Items.GLASS_BOTTLE));
 
     public static final Item GRIMSTEEL_HEART = registerItem("grimsteel_heart",
             new GrimsteelHeartItem(new FabricItemSettings().durability(10)));

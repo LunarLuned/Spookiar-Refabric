@@ -6,7 +6,6 @@
         "items": [
           {
             "items": [
-              "spookiar:grimsteel_block",
               "spookiar:grimsteel_plating",
               "spookiar:grimsteel_scraps"
             ]
@@ -30,7 +29,9 @@
   ],
   "rewards": {
     "recipes": [
-      "spookiar:grimsteel_ingot"
+      "spookiar:grimsteel/grimsteel_ingot",
+      "spookiar:grimsteel/grimsteel_ingot_decraft",
+      "spookiar:grimsteel/grimsteel_ingot_decraft2"
     ]
   }
 }

@@ -6,6 +6,7 @@
         "items": [
           {
             "items": [
+              "spookiar:grimsteel_plating",
               "spookiar:grimsteel_ingot"
             ]
           }
@@ -15,7 +16,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "spookiar:grimsteel_scraps"
+        "recipe": "spookiar:gravestone_of_stashing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +29,7 @@
   ],
   "rewards": {
     "recipes": [
-      "spookiar:grimsteel_scraps"
+      "spookiar:grimsteel/grimsteel_scrap_decraft"
     ]
   }
 }

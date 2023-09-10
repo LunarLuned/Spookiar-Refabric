@@ -68,9 +68,7 @@ public class MinecraftMixin {
 							((PlayerAccessor) player).resetOffhandAttackTicks();
 							((PlayerAccessor) this.player).offHandAttack(((EntityHitResult) this.hitResult).getEntity());
 
-							if (this.gameMode.hasMissTime()) {
 								this.secondAttackCooldown = 20;
-							}
 							((PlayerAccessor) player).resetOffhandAttackTicks();
 
 							// Server

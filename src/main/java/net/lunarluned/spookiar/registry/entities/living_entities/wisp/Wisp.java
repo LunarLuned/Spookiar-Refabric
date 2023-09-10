@@ -1,12 +1,16 @@
 package net.lunarluned.spookiar.registry.entities.living_entities.wisp;
 
 import net.lunarluned.spookiar.registry.effects.ModEffects;
+import net.lunarluned.spookiar.registry.items.ModItems;
 import net.lunarluned.spookiar.sounds.ModSoundEvents;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -21,14 +25,18 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Vex;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.raid.Raider;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.Vec3;
+import net.sydokiddo.chrysalis.misc.util.mobs.ContainerMob;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.EnumSet;
 
-public class Wisp extends Monster {
+public class Wisp extends Monster implements ContainerMob {
 
 
 	private boolean hasLimitedLife;
@@ -110,6 +118,37 @@ public class Wisp extends Monster {
 			this.hurt(this.damageSources().starve(), 1.0F);
 		}
 
+	}
+
+	@Override
+	public boolean fromItem() {
+		return true;
+	}
+
+	@Override
+	public void setFromItem(boolean b) {
+
+	}
+
+	@Override
+	public void saveToItemTag(ItemStack itemStack) {
+		ContainerMob.saveDefaultDataToItemTag(this, itemStack);
+		CompoundTag compoundTag = itemStack.getOrCreateTag();
+	}
+
+	@Override
+	public void loadFromItemTag(CompoundTag compoundTag) {
+		ContainerMob.loadDefaultDataFromItemTag(this, compoundTag);
+	}
+
+	@Override
+	public ItemStack getResultItemStack() {
+		return new ItemStack(ModItems.BOTTLED_WISP);
+	}
+
+	@Override
+	public SoundEvent getPickupSound() {
+		return SoundEvents.BOTTLE_FILL;
 	}
 
 	private class WispMoveControl extends MoveControl {
@@ -257,5 +296,9 @@ public class Wisp extends Monster {
 			}
 
 		}
+	}
+	@Override
+	public InteractionResult mobInteract(Player player, @NotNull InteractionHand interactionHand) {
+		return ContainerMob.containerMobPickup(player, interactionHand, this, Items.GLASS_BOTTLE).orElse(super.mobInteract(player, interactionHand));
 	}
 }
