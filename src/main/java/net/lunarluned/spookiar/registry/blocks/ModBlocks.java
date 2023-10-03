@@ -48,7 +48,7 @@ public class ModBlocks {
 
     public static final Block SCULK_SAC_BLOCK = registerBlock("sculk_sac_block",
             new SculkSacBlock(FabricBlockSettings.copyOf(Blocks.SCULK).mapColor(MapColor.COLOR_BLACK).sounds(SoundType.SCULK).strength(.1f),
-                    UniformInt.of(12, 38)));
+                    UniformInt.of(63, 78)));
 
     public static final Block SPINAL_PILLAR = registerBlock("spinal_pillar",
             new RotatedPillarBlock(FabricBlockSettings.copyOf(Blocks.SCULK).mapColor(MapColor.TERRACOTTA_WHITE).sounds(SoundType.SCULK_CATALYST).requiresTool().resistance(1).strength(2f)));

@@ -32,7 +32,7 @@ public class SpookiarCreativeModeTab {
         // Combat Tab
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register(entries -> {
             entries.addAfter(Items.TOTEM_OF_UNDYING, ModItems.GRAVESTONE_OF_STASHING);
-            entries.addBefore(Items.TRIDENT, ModItems.GRIMSTEEL_SICKLE);
+            entries.addBefore(Items.TRIDENT, ModItems.GRIMSTEEL_SICKLE, ModItems.GRIMSTEEL_DAGGER);
         });
 
         // Spawn Eggs Tab

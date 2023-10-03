@@ -14,6 +14,7 @@ import net.lunarluned.spookiar.sounds.ModSoundEvents;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.Vec3i;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
@@ -34,6 +35,10 @@ public class Spookiar implements ModInitializer {
 
 	public static final String MOD_ID = "spookiar";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+	public static ResourceLocation id(String path) {
+		return new ResourceLocation(MOD_ID, path);
+	}
 
 	@Override
 	public void onInitialize() {

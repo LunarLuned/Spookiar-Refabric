@@ -5,10 +5,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.lunarluned.spookiar.Spookiar;
 import net.lunarluned.spookiar.registry.blocks.ModBlocks;
 import net.lunarluned.spookiar.registry.entities.registry.ModEntities;
-import net.lunarluned.spookiar.registry.items.custom.BucketOfEctoplasmItem;
-import net.lunarluned.spookiar.registry.items.custom.GrimSteelSickleItem;
-import net.lunarluned.spookiar.registry.items.custom.GrimsteelHeartItem;
-import net.lunarluned.spookiar.registry.items.custom.SculkSacItem;
+import net.lunarluned.spookiar.registry.items.custom.*;
 import net.lunarluned.spookiar.registry.items.materials.ModTiers;
 import net.lunarluned.spookiar.sounds.ModSoundEvents;
 import net.minecraft.core.Registry;
@@ -47,6 +44,9 @@ public class ModItems {
 
     public static final Item FULL_SCULK_SAC = registerItem("full_sculk_sac",
             new SculkSacItem(new FabricItemSettings()));
+
+    public static final Item GRIMSTEEL_DAGGER = registerItem("grimsteel_dagger",
+            new GrimsteelDaggerItem(new FabricItemSettings().stacksTo(64)));
 
     public static final Item GRIMSTEEL_SICKLE = registerItem("grimsteel_sickle",
             new GrimSteelSickleItem(ModTiers.GRIMSTEEL,1, -2.2f, new FabricItemSettings()));

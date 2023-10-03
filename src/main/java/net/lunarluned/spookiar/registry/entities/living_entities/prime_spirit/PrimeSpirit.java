@@ -152,14 +152,6 @@ public class PrimeSpirit extends Monster {
 		return createMobAttributes().add(Attributes.MAX_HEALTH, 150.0).add(Attributes.ARMOR, 10).add(Attributes.MOVEMENT_SPEED, 0.30f).add(Attributes.ATTACK_DAMAGE, 8.0).add(Attributes.FOLLOW_RANGE, 30);
 	}
 
-	public int getInvulnerableTicks() {
-		return (Integer)this.entityData.get(DATA_ID_INV);
-	}
-
-	public void setInvulnerableTicks(int ticks) {
-		this.entityData.set(DATA_ID_INV, ticks);
-	}
-
 	@Override
 	protected void customServerAiStep() {
 		this.level().getProfiler().push("primeGhostBrain");
@@ -168,35 +160,12 @@ public class PrimeSpirit extends Monster {
 		this.level().getProfiler().push("primeGhostActivityUpdate");
 		PrimeSpiritBrain.updateActivity(this);
 		this.level().getProfiler().pop();
-/*
-		int i;
-		if (this.getInvulnerableTicks() > 0) {
-			i = this.getInvulnerableTicks() - 1;
-			this.bossEvent.setProgress(1.0F - (float)i / 220.0F);
-			if (i <= 0) {
-				this.level().explode(this, this.getX(), this.getEyeY(), this.getZ(), 7.0F, false, Level.ExplosionInteraction.MOB);
-				if (!this.isSilent()) {
-					this.level().globalLevelEvent(1023, this.blockPosition(), 0);
-				}
-			}
-
-			this.setInvulnerableTicks(i);
-			if (this.tickCount % 10 == 0) {
-				this.heal(10.0F);
-			}
-		}
-*/
 		this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
 
 
 		super.customServerAiStep();
 	}
 
-	public void makeInvulnerable() {
-		this.setInvulnerableTicks(220);
-		this.bossEvent.setProgress(0.0F);
-		this.setHealth(this.getMaxHealth() / 3.0F);
-	}
 
 
 	@Override

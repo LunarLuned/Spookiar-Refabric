@@ -14,6 +14,8 @@ import net.lunarluned.spookiar.sounds.ModSoundEvents;
 import net.lunarluned.spookiar.util.GrimsteelDualWieldingPacket;
 import net.lunarluned.spookiar.util.ModLootTableModifiers;
 
+import static net.lunarluned.spookiar.misc.ModDamageSources.registerDamageSources;
+
 public class ModRegistry {
 
     public static void registerAll() {
@@ -27,6 +29,7 @@ public class ModRegistry {
 		ModEffects.registerEffects();
 		ModPaintings.registerPaintings();
 		CustomBossMusic.createBossMusicInstance();
+        registerDamageSources();
         // - Entities
         ModBlockEntities.registerBlockEntities();
 		ModMemoryModules.MEMORY_MODULES.register();
