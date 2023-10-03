@@ -30,6 +30,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Spookiar implements ModInitializer {
+
+	// TODO: Fix Prime Spirit music cutoff
+	// TODO: Fix Grimsteel Dagger Duplication glitch
+
 	private static final ModConfig CONFIG = AutoConfig.register(ModConfig.class, GsonConfigSerializer::new).getConfig();
 	public static BlockEntityType<GraveBlockEntity> GRAVE_BLOCK_ENTITY;
 

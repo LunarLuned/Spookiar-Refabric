@@ -189,11 +189,11 @@ public class PrimeSpirit extends Monster {
 
 		level().broadcastEntityEvent(this, (byte)62); // Attack Animation State Entity Event
 
-		// If the Ghost is angered, it will heal itself upon attacking
+		// If the Prime Spirit is angered, every hit he does has a 50% chance to heal half a heart
 
 		if ((this.getHealth() < this.getMaxHealth() / 2) || this.isAngered()) {
-			if (this.getRandom().nextInt(10) <= 10) {
-				this.heal(2);
+			if (this.getRandom().nextInt(10) <= 5) {
+				this.heal(1);
 			}
 		}
 
@@ -522,7 +522,6 @@ public class PrimeSpirit extends Monster {
 	protected boolean shouldDespawnInPeaceful() {
 		return true;
 	}
-
 
 	static {
 		DATA_ID_INV = SynchedEntityData.defineId(PrimeSpirit.class, EntityDataSerializers.INT);
