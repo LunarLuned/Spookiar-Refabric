@@ -3,6 +3,7 @@ package net.lunarluned.spookiar.mixin;
 import com.mojang.logging.LogUtils;
 import net.minecraft.network.Connection;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.network.CommonListenerCookie;
 import net.minecraft.server.players.PlayerList;
 import org.slf4j.Logger;
 import org.spongepowered.asm.mixin.Final;
@@ -21,7 +22,7 @@ public class PlayerManagerMixin {
     @Shadow @Mutable @Final private static final Logger LOGGER = LogUtils.getLogger();
 
     @Inject(method = "placeNewPlayer", at = @At(value = "TAIL"))
-    private void spookiar_onPlayerConnectToServer(Connection connection, ServerPlayer player, CallbackInfo info) {
-        LOGGER.info(player.getName().getString() + " has Spookiar installed");
+    private void spookiar_onPlayerConnectToServer(Connection connection, ServerPlayer serverPlayer, CommonListenerCookie commonListenerCookie, CallbackInfo ci) {
+        LOGGER.info(serverPlayer.getName().getString() + " has Spookiar installed");
     }
 }

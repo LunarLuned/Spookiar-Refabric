@@ -44,14 +44,6 @@ public class GrimsteelDaggerProjectile extends AbstractHurtingProjectile {
         return SoundSource.NEUTRAL;
     }
 
-    protected Item getDefaultItem() {
-        return ModItems.GRIMSTEEL_DAGGER;
-    }
-
-    private boolean isMoving() {
-        return this.getDeltaMovement().horizontalDistanceSqr() > 1.0E-6;
-    }
-
     @Override
     public void tick() {
 
@@ -88,7 +80,6 @@ public class GrimsteelDaggerProjectile extends AbstractHurtingProjectile {
     protected void onHitBlock(BlockHitResult blockHitResult) {
         super.onHitBlock(blockHitResult);
         if (!this.level().isClientSide) {
-            this.level().addFreshEntity(new ItemEntity(this.level(), this.getX(), this.getY(), this.getZ(), new ItemStack(this.getDefaultItem())));
             this.discard();
         }
     }

@@ -85,6 +85,9 @@
   "item.sculk_sac.fill": "Sculk Sac fills",
   "item.sculk_sac.empty": "Sculk Sac empties",
 
+  "effect.spookiar.stagnated": "Stagnated",
+  "effect.spookiar.persistence": "Persistence",
+
   "text.autoconfig.spookiar.title": "Spookiar Config",
 
   "text.autoconfig.spookiar.option.features": "Features",
