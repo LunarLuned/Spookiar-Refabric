@@ -1,6 +1,6 @@
 ![SPOOKIAR BASE TITLE](https://github.com/LunarLuned/Spookiar/assets/100322289/5c99a0f1-6fa6-4a95-abce-13f3f53444bb)
 
-### A Quilt mod focused on adding a spectacularly spooky experience in Minecraft through new gameplay features, mobs, items, and structures.
+### A Fabric mod focused on adding a spectacularly spooky experience in Minecraft through new gameplay features, mobs, items, and structures.
 
 Every major feature is customisable and can be toggled in the configuration. 
 
