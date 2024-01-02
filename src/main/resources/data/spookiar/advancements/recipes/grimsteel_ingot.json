@@ -30,6 +30,7 @@
   "rewards": {
     "recipes": [
       "spookiar:grimsteel/grimsteel_ingot",
+      "spookiar:grimsteel/grimsteel_sickle",
       "spookiar:grimsteel/grimsteel_ingot_decraft",
       "spookiar:grimsteel/grimsteel_ingot_decraft2"
     ]

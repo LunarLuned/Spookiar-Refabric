@@ -29,7 +29,8 @@
   ],
   "rewards": {
     "recipes": [
-      "spookiar:grimsteel/grimsteel_scrap_decraft"
+      "spookiar:grimsteel/grimsteel_scrap_decraft",
+      "spookiar:grimsteel/grimsteel_sickle"
     ]
   }
 }

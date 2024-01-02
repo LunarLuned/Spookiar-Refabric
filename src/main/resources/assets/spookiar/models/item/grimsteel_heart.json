@@ -907,7 +907,7 @@
 			"predicate": {
 				"opened": 1
 			},
-			"model": "peculia:item/remnant_heart_open"
+			"model": "spookiar:item/grimsteel_heart_open"
 		}
 	],
 	"display": {

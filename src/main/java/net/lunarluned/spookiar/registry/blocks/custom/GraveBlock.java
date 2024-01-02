@@ -1,5 +1,6 @@
 package net.lunarluned.spookiar.registry.blocks.custom;
 
+import com.mojang.serialization.MapCodec;
 import net.lunarluned.spookiar.registry.entities.GraveBlockEntity;
 import net.lunarluned.spookiar.sounds.ModSoundEvents;
 import net.minecraft.core.BlockPos;
@@ -50,7 +51,12 @@ public class GraveBlock extends HorizontalDirectionalBlock implements EntityBloc
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
-	// Gets the rotation block states for the block
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return null;
+    }
+
+    // Gets the rotation block states for the block
 
 	public BlockState getStateForPlacement(BlockPlaceContext ctx) {
 		return this.defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getClockWise());
@@ -82,11 +88,12 @@ public class GraveBlock extends HorizontalDirectionalBlock implements EntityBloc
     }
 
     @Override
-    public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
+    public BlockState playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
             if(RetrieveGrave(player, level, pos))
         dropAllGrave(level, pos);
         player.playSound(ModSoundEvents.BLOCK_GRAVESTONE_COLLECT, 1, 0.6F + player.getRandom().nextFloat() * 0.4F);
         super.playerWillDestroy(level, pos, state, player);
+        return state;
     }
 
     @Nullable
